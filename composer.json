@@ -23,7 +23,8 @@
         "drush/drush": "^11 || ^12",
         "drupal/admin_toolbar": "^3.3",
         "drupal/paragraphs": "^1.15",
-        "drupal/restui": "^1.21"
+        "drupal/restui": "^1.21",
+        "drupal/devel_kint_extras": "^1.1"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
