@@ -1,0 +1,18 @@
+@import './vendor/reset';
+
+@import './variables/variables';
+@import './variables/mixins';
+
+@import './layout/layout';
+@import './layout/heder';
+@import './layout/main';
+@import './layout/footer';
+
+.container {
+    max-width: $breakpoint-max;
+    margin: 0 auto;
+}
+
+body {
+    background-color: rgba($color: $gold, $alpha: .7);
+}
