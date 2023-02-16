@@ -6,8 +6,6 @@ core_version_requirement: ^9 || ^10
 libraries:
   - my_theme/global-styling
   - my_theme/global-scripts
-#   - hd_theme/fancy-box
-#   - hd_theme/product-library
 libraries-override:
   classy/base: false
 regions:
