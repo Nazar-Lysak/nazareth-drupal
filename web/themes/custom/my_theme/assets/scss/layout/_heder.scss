@@ -8,6 +8,10 @@ header {
         align-items: center;
         justify-content: space-between;
 
+        .header_navigation {
+            display: flex;
+        }
+
         #block-my-theme-site-branding {
             padding: 0;
             margin: 0;

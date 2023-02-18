@@ -1,7 +1,11 @@
 <div class="layout-container">
   <header>
     <div class="container">
-      {{ page.header }}
+      {{ page.header.my_theme_site_branding }}
+      <div class="header_navigation">
+      {{ page.header.mainnavigation }}
+      {{ page.header.useraccountmenu }}
+      </div>
     </div>    
   </header>
   <main>

@@ -99,6 +99,9 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
+header .container .header_navigation {
+  display: flex;
+}
 header .container #block-my-theme-site-branding {
   padding: 0;
   margin: 0;
@@ -121,7 +124,6 @@ header .container .menu .menu__item .menu__link--link {
 main .region--content {
   min-height: 400px;
   width: 100%;
-  padding: 20px 0;
   margin: 40px 0;
   background-color: #f0f8ff;
 }
@@ -132,6 +134,40 @@ footer {
   height: 400px;
 }
 
+.region--content .front-page {
+  background-color: #282c34;
+  text-align: center;
+  padding: 40px;
+}
+.region--content .front-page header {
+  display: none;
+}
+.region--content .front-page .primary-image {
+  padding: 0;
+  margin: 0 auto;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.region--content .front-page .primary-image img {
+  margin: 0 auto;
+  width: 50%;
+  animation: spin;
+}
+.region--content .front-page h2,
+.region--content .front-page p {
+  color: #fff;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .layout-container .node--type-article {
   padding: 15px;
   display: block;
