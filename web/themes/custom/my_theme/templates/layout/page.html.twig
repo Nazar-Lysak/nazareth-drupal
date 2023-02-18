@@ -6,10 +6,10 @@
   </header>
   <main>
     <div class="container">
-    {% if page.content.system_main['#title'] == null %}
-      <div id="root"></div>
+      {% if page.content.system_main['#attached']['drupalSettings'] %}
+      {{page.content}}        
     {% else %}
-      {{page.content}}      
+      <div id="root"></div> 
     {% endif %}
     </div>    
   </main>
