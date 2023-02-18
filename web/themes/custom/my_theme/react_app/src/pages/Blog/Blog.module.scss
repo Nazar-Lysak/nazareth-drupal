@@ -9,8 +9,48 @@
     color: white;
     text-align: center;
     padding: 20px 40px;
+    overflow: hidden;
+
+    .blogItem {
+        background-color: aliceblue;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px 30px;
+
+        .headding {
+            color: black;
+            transition: .4s;
+        } 
+
+        .content {
+            display: flex;
+
+            .image {
+                width: 30%;
+                min-width: 370px;
+                object-fit: contain;
+            }
+
+            .description {
+                color: black;
+                padding: 0 10px;
+            }
+        }
+
+        .date {
+            text-align: end;
+            transition: .4s;
+        }
+
+        &:hover {
+            .headding {
+                transform: scale(1.05);
+            } 
+
+            .date {
+                color: darken($color: #0d77b5, $amount: 10%);
+            }
+        }
+    }
 }
 
-.headding {
-    color: #0d77b5;
-}

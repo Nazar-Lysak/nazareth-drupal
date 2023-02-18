@@ -1,12 +1,13 @@
 import {Route, Routes} from 'react-router-dom';
 
 import styles from './App.module.scss';
-
+ 
 import ReactCourse from '../pages/React_course/React_course';
 import Blog from '../pages/Blog/Blog';
 import AdditionalVideo from '../pages/Additional_video/Additional_video';
 
-function App() {
+function App() {  
+
   return (
     <div className={styles.content_wrapper}>
       <Routes>
