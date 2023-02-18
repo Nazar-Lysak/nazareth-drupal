@@ -1,15 +1,19 @@
-# Global stylings. These CSS files will be loaded on every pages.
+
 global-styling:
   version: 1.0
   css:
     base:
       dist/css/style.css: {}
+      react_app/build/static/css/main.css: {}
 
-# Global Javascripts. These will be loaded on every pages.
 global-scripts:
   version: 1.0
   js:
     dist/js/index.js: {}
+    react_app/build/static/js/main.js: {minified: true}
+    "http://localhost:3000/modules/custom/nbs_react_bv_widget_block/build/static/js/main.js":
+      { type: external, minified: true, async: true }
+    
   dependencies:
     - core/drupal
     - core/jquery
