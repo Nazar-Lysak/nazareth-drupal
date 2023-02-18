@@ -73,6 +73,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* colors */
 /* brakepoints */
+.layout--pass--content-medium .user-login-form {
+  padding: 20px 60px;
+  margin: 0;
+}
+
 .kint-rich footer {
   height: auto;
 }
