@@ -6,7 +6,11 @@
   </header>
   <main>
     <div class="container">
+    {% if page.content.system_main['#title'] == null %}
       <div id="root"></div>
+    {% else %}
+      {{page.content}}      
+    {% endif %}
     </div>    
   </main>
   <footer>
