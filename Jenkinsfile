@@ -14,8 +14,8 @@ pipeline {
       steps {
         dir("$DRUPAL_ROOT/themes/$THEME_NAME") {
           sh "rm -rf build"
-          sh "npm yarn install"
-          sh "npm yarn gulp build"
+          sh "yarn install --ignore-engines"
+          sh "yarn gulp build"
         }
       }
     }
