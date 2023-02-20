@@ -6,6 +6,9 @@
     "dependencies": {
       "gulp": "^4.0.2",
       "gulp-sass": "^5.1.0",
-      "sass": "^1.52.1"
+      "sass": "^1.52.1",
+      "gulp-concat": "^2.6.1",
+      "gulp-uglify": "^3.0.2",
+      "gulp-babel": "^8.0.0"
     }
   }

@@ -16,7 +16,7 @@
 @import './components/paragraphs/text';
 
 .container {
-    max-width: $breakpoint-max;
+    max-width: $breakpoint-max; 
     margin: 0 auto;
 
     .region {

@@ -8,6 +8,9 @@
 /web/sites/*/services*.yml
 !/web/sites/*/services.pantheon.*.yml
 !/web/sites/*/services.yml
+/web/sites/default/settings.php
+.ddev/
+/config/
 
 # Ignore paths that contain user-generated content.
 /web/sites/*/files

@@ -6,6 +6,7 @@ module.exports = {
         },
         optimization: {
           runtimeChunk: false,
+          // minimize: false,
           splitChunks: {
             chunks(chunk) {
               return false;
@@ -18,10 +19,13 @@ module.exports = {
       {
         plugin: {
           overrideWebpackConfig: ({ webpackConfig }) => {
-            // CSS. "5" is MiniCssPlugin
-            webpackConfig.plugins[5].options.filename = 'static/css/[name].css';
+            const miniCssPlugin = webpackConfig.plugins.find(
+              plugin => plugin.constructor.name === 'MiniCssExtractPlugin'
+            );
+            miniCssPlugin.options.minimize = false;
+            miniCssPlugin.options.filename = 'static/css/[name].css';
             return webpackConfig;
-          },
+          }
         },
         options: {}
       }
