@@ -13,7 +13,7 @@ pipeline {
     stage('Build Theme') {
       steps {
         dir("$DRUPAL_ROOT/themes/$THEME_NAME") {
-          sh "rm -rf dist"
+          sh "rm -rf build"
           sh "yarn install"
         //   sh "yarn gulp build"
         }
