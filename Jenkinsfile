@@ -15,7 +15,7 @@ pipeline {
         dir("$DRUPAL_ROOT/themes/$THEME_NAME") {
           sh "rm -rf dist"
           sh "yarn install"
-          sh "yarn gulp build"
+        //   sh "yarn gulp build"
         }
       }
     }
