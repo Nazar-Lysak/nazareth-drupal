@@ -1,0 +1,43 @@
+
+.region--content {
+    .front-page {
+        background-color: #282c34;
+        text-align: center;
+        padding: 40px;
+
+        header {
+            display: none;
+        }
+
+        .primary-image {
+            padding: 0;
+            margin: 0 auto;
+            animation-name: spin;
+            animation-duration: 5000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; 
+
+            img {
+                margin: 0 auto;
+                width: 50%;
+                animation: spin;
+            }
+        }        
+
+        h2,
+        p {
+            color: #fff;
+        }
+    }
+
+ 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

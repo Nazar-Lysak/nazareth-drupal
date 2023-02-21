@@ -1,0 +1,19 @@
+.layout-container {
+    .node--type-article {
+        padding: 15px;
+        display: block;
+
+        header.layout--content-narrow {
+            display: none;
+        }        
+
+        .primary-image {
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+

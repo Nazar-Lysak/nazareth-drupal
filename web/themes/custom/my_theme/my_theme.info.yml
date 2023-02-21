@@ -1,0 +1,15 @@
+name: MY theme
+type: theme
+base theme: olivero
+description: 'description'
+core_version_requirement: ^9 || ^10
+libraries:
+  - my_theme/global-styling
+  - my_theme/global-scripts
+libraries-override:
+  classy/base: false
+regions:
+  header: Header
+  content: Content
+  left_sitebar: Left sitebar
+  footer: Footer

@@ -1,0 +1,25 @@
+<div class="layout-container">
+  <header>
+    <div class="container">
+      {{ page.header.my_theme_site_branding }}
+      <div class="header_navigation">
+        {{ page.header.mainnavigation }}
+        {{ page.header.useraccountmenu }}
+      </div>
+    </div>    
+  </header>
+  <main>
+    <div class="container">
+      {% if page.content.system_main['#attached']['drupalSettings'] %}
+      {{page.content}}        
+    {% else %}
+      <div id="root"></div> 
+    {% endif %}
+    </div>    
+  </main>
+  <footer>
+    <div class="container">
+      {{ page.footer }}
+    </div>   
+  </footer>
+</div>

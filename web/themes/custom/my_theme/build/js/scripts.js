@@ -1,0 +1,1 @@
+jQuery,Drupal.behaviors.mainScript={attach:function(a,i){console.log("main script")}};

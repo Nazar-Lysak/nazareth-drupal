@@ -1,0 +1,44 @@
+@import './vendor/reset';
+
+@import './variables/variables';
+@import './variables/mixins';
+
+@import './drupal_system/styles';
+@import './layout/layout';
+@import './layout/heder';
+@import './layout/main';
+@import './layout/footer';
+
+@import './components/nodes/front_page';
+@import './components/nodes/article';
+
+@import './components/paragraphs/image';
+@import './components/paragraphs/text';
+
+.container {
+    max-width: $breakpoint-max; 
+    margin: 0 auto;
+
+    .region {
+        display: block;
+    }
+}
+
+body {
+    background-color: rgba($color: $gold, $alpha: .7);
+}
+
+h1{@include adaptiv-font(46, 28);}
+h2{@include adaptiv-font(40, 26);}
+h3{@include adaptiv-font(28, 24);}
+h4{@include adaptiv-font(22, 20);}
+h5{@include adaptiv-font(18, 18);}
+h6{@include adaptiv-font(16, 16);}
+
+p {
+  @include adaptiv-font(16, 14);
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0;
+  margin: 5px !important;
+}
