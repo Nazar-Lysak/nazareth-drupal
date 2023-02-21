@@ -4,13 +4,13 @@ global-styling:
   css:
     base:
       build/css/style.css: {}
-      # react_app/build/static/css/main.css: {}
+      react_app/build/static/css/main.css: {}
 
 global-scripts:
   version: 1.0
   js:
     build/js/index.js: {}
-    # react_app/build/static/js/main.js: {minified: true}
+    react_app/build/static/js/main.js: {minified: true}
     "http://localhost:3000/static/js/bundle.js":
       { type: external, minified: true, async: true }
     
