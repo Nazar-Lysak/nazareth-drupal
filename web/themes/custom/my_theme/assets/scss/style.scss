@@ -26,6 +26,7 @@
 
 body {
     background-color: rgba($color: $gold, $alpha: .7);
+    background-color: red !important;
 }
 
 h1{@include adaptiv-font(46, 28);}
